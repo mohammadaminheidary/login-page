@@ -1,0 +1,126 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d52d73;
+}
+
+#my-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  /* background-color: #FFFAFA; */
+  background-color: #F8F8FF;
+  border: 0.1rem solid #000;
+  border-radius: 2rem;
+  height: 30rem;
+  width: 25rem;
+  box-shadow: 1px 2px 5px black;
+}
+
+#login-text {
+  padding-top: -12rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3rem;
+  transition: color 0.5s;
+  color: #000;
+  transition: scale 0.8s, color 0.4s;
+  &:hover {
+    color: #d52d73;
+    scale: 1.1;
+    #l-text { 
+      transition: color 0.5s;
+      color: #000;
+    }
+  }
+}
+
+#username-input {
+  height: 2rem;
+  width: 18rem;
+  border: 0.12rem solid black;
+  border-radius: 2rem;
+  padding-left: 0.5rem;
+  background-color: #F8F8FF;
+  box-shadow: 0.5px 0.5px 1px black;
+
+  transition:
+    background-color 0.5s,
+    scale 0.5s,
+    border-color 0.2s,
+    color 0.2s;
+  &:hover {
+    scale: 1.1;
+    background-color: #e7619940;
+    border-color: #d52d73;
+  }
+
+  &:focus {
+    outline: none;
+    scale: 1.1;
+    color: #d52d73;
+    border-color: #d52d73;
+  }
+}
+
+#password-input {
+  height: 2rem;
+  width: 18rem;
+  border: 0.12rem solid black;
+  border-radius: 2rem;
+  padding-left: 0.5rem;
+  background-color: #F8F8FF;
+  box-shadow: 0.5px 0.5px 1px black;
+
+  transition:
+    background-color 0.5s,
+    scale 0.5s,
+    border-color 0.2s,
+    color 0.2s;
+  &:hover {
+    scale: 1.1;
+    background-color: #e7619940;
+    border-color: #d52d73;
+  }
+
+  &:focus {
+    outline: none;
+    scale: 1.1;
+    color: #d52d73;
+    border-color: #d52d73;
+  }
+}
+
+#sub-bt {
+  width: 19rem;
+  height: 2rem;
+  border: 0.12rem solid black;
+  border-radius: 2rem;
+  background-color: #d52d73;
+  box-shadow: 2px 2px 5px black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fafafa;
+  transition: scale 0.5s;
+  &:hover {
+    cursor: pointer;
+    outline: none;
+    scale: 0.9;
+  }
+}
+
+input::placeholder {
+  color: #d52d73;
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-weight: 700;
+}
+
+#l-text { 
+  transition: color 0.5s;
+  font-size: 4rem;
+  color: #d52d73;
+}
